@@ -10,13 +10,14 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:Whitehawk2/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: dev-hdtwcel9
+      # repository: stefanprodan/podinfo
+      repository: eu.gcr.io/theta-era-322507/podinfo
+      tag: dev-te77gbdc
     replicaCount: 1
     hpa:
       enabled: false

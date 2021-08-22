@@ -10,12 +10,13 @@ metadata:
 spec:
   releaseName: podinfo-rc
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:whitehawk2/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      #repository: stefanprodan/podinfo
+      repository: eu.gcr.io/theta-era-322507/podinfo
       tag: stg-9ij63o4c
     replicaCount: 2
     hpa:
